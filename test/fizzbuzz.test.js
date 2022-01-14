@@ -1,5 +1,6 @@
 const fizzBuzz = require("../src/fizzbuzz")
 
-test('TODO', () => {
-    // TODO: Tester fizzbuzz()
+test('divisible_par_3_seulement', () => {
+    expect(fizzBuzz(3)).toBe("Fizz")
 })
+
