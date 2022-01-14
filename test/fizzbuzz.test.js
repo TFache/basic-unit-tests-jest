@@ -9,4 +9,7 @@ test('divisible_par_5_seulement', () => {
 test('divisible_par_3_et_par_5', () => {
     expect(fizzBuzz(15)).toBe("FizzBuzz")
 })
+test('divisible_ni_par_3_ni_par_5', () => {
+    expect(fizzBuzz(1)).toBe(undefined)
+})
 
