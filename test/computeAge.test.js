@@ -11,3 +11,7 @@ test('age_valide', () => {
 test('anniversaire_dans_le_futur', () => {
     expect(computeAge(birthday,dateBeforeBirthday)).toBe("birthday in the future compared to currentDate.")
 })
+
+test('date_non_valide', () => {
+    expect(computeAge(birthday,45)).toBe("One or both parameters are not dates.")
+})
