@@ -11,3 +11,7 @@ test("une_entree_non_tableau_renvoie_erreur", () => {
 test("une_valeur_se_repete", () => {
     expect(mergeSortedArrays([1, 3, 5], [3, 4])).toStrictEqual([1, 3, 3, 4, 5])
 })
+
+test("un_parametre_est_tableau_vide", () => {
+    expect(mergeSortedArrays([1, 3, 5], [])).toStrictEqual([1, 3, 5])
+})
